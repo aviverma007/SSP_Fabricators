@@ -4,6 +4,12 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [displayedTitle, setDisplayedTitle] = useState('');
+  const [displayedSubtitle, setDisplayedSubtitle] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [titleComplete, setTitleComplete] = useState(false);
+  const [imageTransition, setImageTransition] = useState(false);
   
   const heroSlides = [
     {
@@ -29,13 +35,64 @@ const HeroSection = () => {
     }
   ];
 
+  // Typing effect logic
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 3000);
+    const currentHero = heroSlides[currentSlide];
+    let timeoutId;
 
-    return () => clearInterval(interval);
-  }, []);
+    if (isTyping && !isDeleting) {
+      // Typing title
+      if (displayedTitle.length < currentHero.title.length) {
+        timeoutId = setTimeout(() => {
+          setDisplayedTitle(currentHero.title.slice(0, displayedTitle.length + 1));
+        }, 100);
+      } else if (!titleComplete) {
+        setTitleComplete(true);
+        // Start typing subtitle after title is complete
+        timeoutId = setTimeout(() => {
+          if (displayedSubtitle.length < currentHero.subtitle.length) {
+            setDisplayedSubtitle(currentHero.subtitle.slice(0, displayedSubtitle.length + 1));
+          }
+        }, 200);
+      } else if (displayedSubtitle.length < currentHero.subtitle.length) {
+        // Continue typing subtitle
+        timeoutId = setTimeout(() => {
+          setDisplayedSubtitle(currentHero.subtitle.slice(0, displayedSubtitle.length + 1));
+        }, 100);
+      } else {
+        // Both title and subtitle complete, wait then start deleting
+        timeoutId = setTimeout(() => {
+          setIsDeleting(true);
+          setIsTyping(false);
+        }, 3000);
+      }
+    } else if (isDeleting) {
+      // Deleting subtitle first
+      if (displayedSubtitle.length > 0) {
+        timeoutId = setTimeout(() => {
+          setDisplayedSubtitle(displayedSubtitle.slice(0, -1));
+        }, 50);
+      } else if (displayedTitle.length > 0) {
+        // Delete title after subtitle is deleted
+        timeoutId = setTimeout(() => {
+          setDisplayedTitle(displayedTitle.slice(0, -1));
+        }, 50);
+      } else {
+        // Both deleted, move to next slide
+        setIsDeleting(false);
+        setIsTyping(true);
+        setTitleComplete(false);
+        setImageTransition(true);
+        
+        timeoutId = setTimeout(() => {
+          setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+          setImageTransition(false);
+        }, 500);
+      }
+    }
+
+    return () => clearTimeout(timeoutId);
+  }, [displayedTitle, displayedSubtitle, isTyping, isDeleting, titleComplete, currentSlide]);
 
   const currentHero = heroSlides[currentSlide];
 
