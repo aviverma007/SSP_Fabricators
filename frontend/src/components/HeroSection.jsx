@@ -196,22 +196,70 @@ const HeroSection = () => {
 
           {/* Hero Image */}
           <div className="relative animate-fade-in-right animation-delay-400">
-            <div className="relative bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-500">
-              <img
-                src={currentHero.image}
-                alt="Steel Fabrication Work"
-                className="w-full h-96 object-cover rounded-lg transition-all duration-1000"
-              />
+            <div className="relative bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-500 overflow-hidden">
+              {/* Image Container with overlay effects */}
+              <div className="relative w-full h-96 rounded-lg overflow-hidden">
+                {heroSlides.map((slide, index) => (
+                  <img
+                    key={index}
+                    src={slide.image}
+                    alt={`Steel Fabrication Work ${index + 1}`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
+                      index === currentSlide 
+                        ? imageTransition 
+                          ? 'opacity-0 scale-110 blur-sm' 
+                          : 'opacity-100 scale-100 blur-0'
+                        : index === (currentSlide - 1 + heroSlides.length) % heroSlides.length
+                        ? imageTransition
+                          ? 'opacity-100 scale-100 blur-0'
+                          : 'opacity-0 scale-90 blur-sm'
+                        : 'opacity-0 scale-90 blur-sm'
+                    }`}
+                    style={{
+                      transform: index === currentSlide && !imageTransition 
+                        ? 'scale(1) translateZ(0)' 
+                        : index === currentSlide && imageTransition
+                        ? 'scale(1.1) translateZ(0)'
+                        : 'scale(0.9) translateZ(0)',
+                      filter: index === currentSlide && !imageTransition 
+                        ? 'blur(0px) brightness(1)' 
+                        : 'blur(2px) brightness(0.7)'
+                    }}
+                  />
+                ))}
+                
+                {/* Gradient overlay for smooth transitions */}
+                <div className={`absolute inset-0 bg-gradient-to-r from-blue-500/10 to-orange-500/10 transition-opacity duration-1000 ${
+                  imageTransition ? 'opacity-100' : 'opacity-0'
+                }`}></div>
+              </div>
               
               {/* Floating Stats Card */}
-              <div className="absolute -bottom-6 -left-6 bg-blue-900 text-white p-6 rounded-lg shadow-xl animate-float-1">
+              <div className="absolute -bottom-6 -left-6 bg-blue-900 text-white p-6 rounded-lg shadow-xl animate-float-1 z-10">
                 <div className="text-3xl font-bold">17+</div>
                 <div className="text-sm">Years Experience</div>
               </div>
               
               {/* Floating Quality Badge */}
-              <div className="absolute -top-6 -right-6 bg-orange-500 text-white p-4 rounded-full shadow-xl animate-float-2">
+              <div className="absolute -top-6 -right-6 bg-orange-500 text-white p-4 rounded-full shadow-xl animate-float-2 z-10">
                 <CheckCircle size={32} />
+              </div>
+              
+              {/* Animated particles overlay */}
+              <div className="absolute inset-0 pointer-events-none">
+                {[...Array(8)].map((_, i) => (
+                  <div
+                    key={i}
+                    className={`absolute w-1 h-1 bg-white rounded-full opacity-30 transition-all duration-1000 ${
+                      imageTransition ? 'animate-ping' : ''
+                    }`}
+                    style={{
+                      left: `${Math.random() * 100}%`,
+                      top: `${Math.random() * 100}%`,
+                      animationDelay: `${i * 0.2}s`
+                    }}
+                  ></div>
+                ))}
               </div>
             </div>
           </div>
