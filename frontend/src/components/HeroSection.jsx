@@ -136,9 +136,16 @@ const HeroSection = () => {
               <div className="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium animate-slide-in-left">
                 17 Years Fabrication Excellence
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight animate-slide-in-left animation-delay-200">
-                {currentHero.title} 
-                <span className="text-blue-900 block animate-slide-in-right animation-delay-400">{currentHero.subtitle}</span>
+              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight min-h-[200px]">
+                <span className="typing-text">
+                  {displayedTitle}
+                  {isTyping && !titleComplete && <span className="typing-cursor animate-pulse">|</span>}
+                </span>
+                <span className="text-blue-900 block">
+                  {displayedSubtitle}
+                  {isTyping && titleComplete && displayedSubtitle.length < currentHero.subtitle.length && <span className="typing-cursor animate-pulse">|</span>}
+                  {isDeleting && displayedSubtitle.length > 0 && <span className="typing-cursor animate-pulse">|</span>}
+                </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed animate-fade-in animation-delay-600">
                 <strong className="text-orange-500">YOU THINK, WE MAKE</strong><br/>
