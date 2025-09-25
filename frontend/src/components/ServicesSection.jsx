@@ -37,8 +37,8 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service) => (
-            <Card key={service.id} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg">
+          {services.map((service, index) => (
+            <Card key={service.id} className={`group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg scroll-animate hover-lift`} style={{animationDelay: `${index * 0.1}s`}}>
               <div className="relative overflow-hidden rounded-t-lg">
                 <img 
                   src={service.image} 
@@ -60,7 +60,11 @@ const ServicesSection = () => {
                   {service.description}
                 </p>
                 
-                <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+                <Button 
+                  variant="outline" 
+                  className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-200"
+                  onClick={() => window.location.href = '/services'}
+                >
                   Learn More
                 </Button>
               </CardContent>
