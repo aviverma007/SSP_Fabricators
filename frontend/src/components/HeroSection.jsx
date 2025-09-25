@@ -200,32 +200,59 @@ const HeroSection = () => {
               {/* Image Container with overlay effects */}
               <div className="relative w-full h-96 rounded-lg overflow-hidden">
                 {heroSlides.map((slide, index) => (
-                  <img
+                  <div
                     key={index}
-                    src={slide.image}
-                    alt={`Steel Fabrication Work ${index + 1}`}
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
+                    className={`absolute inset-0 transition-all duration-1500 ease-in-out ${
                       index === currentSlide 
                         ? imageTransition 
-                          ? 'opacity-0 scale-110 blur-sm' 
-                          : 'opacity-100 scale-100 blur-0'
+                          ? 'opacity-0 scale-110' 
+                          : 'opacity-100 scale-100'
                         : index === (currentSlide - 1 + heroSlides.length) % heroSlides.length
                         ? imageTransition
-                          ? 'opacity-100 scale-100 blur-0'
-                          : 'opacity-0 scale-90 blur-sm'
-                        : 'opacity-0 scale-90 blur-sm'
+                          ? 'opacity-30 scale-105'
+                          : 'opacity-0 scale-95'
+                        : 'opacity-0 scale-95'
                     }`}
                     style={{
                       transform: index === currentSlide && !imageTransition 
-                        ? 'scale(1) translateZ(0)' 
+                        ? 'scale(1) rotate(0deg)' 
                         : index === currentSlide && imageTransition
-                        ? 'scale(1.1) translateZ(0)'
-                        : 'scale(0.9) translateZ(0)',
+                        ? 'scale(1.1) rotate(0.5deg)'
+                        : 'scale(0.95) rotate(-0.5deg)',
                       filter: index === currentSlide && !imageTransition 
-                        ? 'blur(0px) brightness(1)' 
-                        : 'blur(2px) brightness(0.7)'
+                        ? 'blur(0px) brightness(1) saturate(1)' 
+                        : imageTransition
+                        ? 'blur(8px) brightness(0.6) saturate(1.2)'
+                        : 'blur(4px) brightness(0.5) saturate(0.8)'
                     }}
-                  />
+                  >
+                    <img
+                      src={slide.image}
+                      alt={`Steel Fabrication Work ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                    
+                    {/* Overlay gradient for smooth transitions */}
+                    <div 
+                      className={`absolute inset-0 transition-opacity duration-1500 ${
+                        index === currentSlide && imageTransition 
+                          ? 'opacity-80' 
+                          : index === currentSlide
+                          ? 'opacity-0'
+                          : 'opacity-60'
+                      }`}
+                      style={{
+                        background: index === currentSlide 
+                          ? 'linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(249, 115, 22, 0.1))'
+                          : 'linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1))'
+                      }}
+                    ></div>
+                    
+                    {/* Shimmer effect during transitions */}
+                    {imageTransition && index === currentSlide && (
+                      <div className="absolute inset-0 shimmer opacity-20"></div>
+                    )}
+                  </div>
                 ))}
                 
                 {/* Gradient overlay for smooth transitions */}
