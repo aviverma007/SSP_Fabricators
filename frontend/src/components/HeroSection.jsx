@@ -318,15 +318,29 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Progress Indicator */}
-        <div className="flex justify-center mt-8">
-          <div className="bg-gray-200 rounded-full h-1 w-64 overflow-hidden">
+        {/* Enhanced Progress Indicator */}
+        <div className="flex justify-center mt-8 space-x-4">
+          <div className="bg-gray-200 rounded-full h-2 w-80 overflow-hidden shadow-inner">
             <div 
-              className="bg-gradient-to-r from-blue-600 to-orange-500 h-full rounded-full transition-all duration-300"
+              className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 h-full rounded-full transition-all duration-500 relative"
               style={{
                 width: `${((currentSlide + 1) / heroSlides.length) * 100}%`
               }}
-            ></div>
+            >
+              <div className="absolute inset-0 bg-white opacity-20 animate-pulse rounded-full"></div>
+            </div>
+          </div>
+          
+          {/* Typing status indicator */}
+          <div className="flex items-center space-x-2">
+            <div className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+              isTyping ? 'bg-green-500 animate-pulse' : 
+              isDeleting ? 'bg-red-500 animate-pulse' : 
+              'bg-blue-500'
+            }`}></div>
+            <span className="text-xs text-gray-500 font-medium">
+              {isTyping ? 'Typing...' : isDeleting ? 'Clearing...' : 'Ready'}
+            </span>
           </div>
         </div>
       </div>
