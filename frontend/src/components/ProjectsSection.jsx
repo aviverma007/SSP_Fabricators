@@ -57,8 +57,8 @@ const ProjectsSection = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
-            <Card key={project.id} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+          {filteredProjects.map((project, index) => (
+            <Card key={project.id} className={`group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden scroll-animate hover-lift`} style={{animationDelay: `${index * 0.1}s`}}>
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image} 
@@ -70,6 +70,13 @@ const ProjectsSection = () => {
                     <Badge className="mb-2 bg-white/20 text-white border-white/30">
                       {project.category}
                     </Badge>
+                    <Button 
+                      size="sm" 
+                      className="bg-orange-500 hover:bg-orange-600 text-white w-full"
+                      onClick={() => window.location.href = '/contact'}
+                    >
+                      Get Similar Quote
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -82,9 +89,17 @@ const ProjectsSection = () => {
                     {project.client}
                   </Badge>
                 </div>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-sm mb-4">
                   Professional fabrication and installation services delivered with precision and quality standards.
                 </p>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-200"
+                  onClick={() => window.location.href = '/contact'}
+                >
+                  View Details
+                </Button>
               </CardContent>
             </Card>
           ))}
