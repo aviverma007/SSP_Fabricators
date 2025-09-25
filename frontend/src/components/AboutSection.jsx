@@ -47,7 +47,7 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 scroll-animate">
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">
                 Heavy Steel Fabrication Company
@@ -64,39 +64,42 @@ const AboutSection = () => {
 
             {/* Key Features */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 hover:scale-105 transition-transform duration-200">
                 <CheckCircle className="text-green-500 flex-shrink-0" size={16} />
                 <span className="text-sm text-gray-700">Excellence in Work</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 hover:scale-105 transition-transform duration-200">
                 <CheckCircle className="text-green-500 flex-shrink-0" size={16} />
                 <span className="text-sm text-gray-700">Strong Partnerships</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 hover:scale-105 transition-transform duration-200">
                 <CheckCircle className="text-green-500 flex-shrink-0" size={16} />
                 <span className="text-sm text-gray-700">Commitment Driven</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 hover:scale-105 transition-transform duration-200">
                 <CheckCircle className="text-green-500 flex-shrink-0" size={16} />
                 <span className="text-sm text-gray-700">Professional Team</span>
               </div>
             </div>
 
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+            <Button 
+              className="bg-orange-500 hover:bg-orange-600 text-white hover:scale-105 transform transition-all duration-200 pulse-glow"
+              onClick={() => window.location.href = '/contact'}
+            >
               Request Quote
             </Button>
           </div>
 
           {/* Image */}
-          <div className="relative">
+          <div className="relative scroll-animate">
             <img
               src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
               alt="Steel Fabrication Workshop"
-              className="w-full h-96 object-cover rounded-2xl shadow-xl"
+              className="w-full h-96 object-cover rounded-2xl shadow-xl hover-lift"
             />
             
             {/* Overlay Card */}
-            <Card className="absolute -bottom-8 -left-8 bg-white shadow-xl">
+            <Card className="absolute -bottom-8 -left-8 bg-white shadow-xl animate-float-1">
               <CardContent className="p-6">
                 <div className="text-3xl font-bold text-blue-900">17+</div>
                 <div className="text-sm text-gray-600">Years of Excellence</div>
