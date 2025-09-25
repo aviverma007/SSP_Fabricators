@@ -32,8 +32,21 @@ const Header = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="text-2xl font-bold text-blue-900">
-                SSP <span className="text-orange-500">Fabricators</span>
+              <div className="flex items-center space-x-3">
+                {/* Logo Icon */}
+                <div className="relative">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
+                    <div className="text-white font-bold text-lg">S</div>
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-400 rounded-md flex items-center justify-center shadow-md transform -rotate-12 hover:rotate-0 transition-transform duration-300">
+                    <div className="text-white font-bold text-xs">P</div>
+                  </div>
+                </div>
+                
+                {/* Company Name */}
+                <div className="text-2xl font-bold text-blue-900">
+                  SSP <span className="text-orange-500">Fabricators</span>
+                </div>
               </div>
             </div>
 
