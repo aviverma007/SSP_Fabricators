@@ -274,16 +274,42 @@ const HeroSection = () => {
               
               {/* Animated particles overlay */}
               <div className="absolute inset-0 pointer-events-none">
-                {[...Array(8)].map((_, i) => (
+                {[...Array(12)].map((_, i) => (
                   <div
                     key={i}
-                    className={`absolute w-1 h-1 bg-white rounded-full opacity-30 transition-all duration-1000 ${
-                      imageTransition ? 'animate-ping' : ''
+                    className={`absolute rounded-full transition-all duration-1500 ${
+                      imageTransition 
+                        ? 'animate-ping opacity-80' 
+                        : 'opacity-20 animate-pulse'
                     }`}
                     style={{
                       left: `${Math.random() * 100}%`,
                       top: `${Math.random() * 100}%`,
-                      animationDelay: `${i * 0.2}s`
+                      width: imageTransition ? '6px' : '2px',
+                      height: imageTransition ? '6px' : '2px',
+                      backgroundColor: imageTransition 
+                        ? `hsl(${Math.random() * 360}, 70%, 80%)` 
+                        : 'rgba(255, 255, 255, 0.6)',
+                      animationDelay: `${i * 0.15}s`,
+                      animationDuration: imageTransition ? '0.8s' : '2s'
+                    }}
+                  ></div>
+                ))}
+                
+                {/* Floating geometric shapes */}
+                {imageTransition && [...Array(6)].map((_, i) => (
+                  <div
+                    key={`shape-${i}`}
+                    className="absolute animate-float-1 opacity-30"
+                    style={{
+                      left: `${Math.random() * 90}%`,
+                      top: `${Math.random() * 90}%`,
+                      width: '8px',
+                      height: '8px',
+                      backgroundColor: i % 2 === 0 ? '#3B82F6' : '#F97316',
+                      borderRadius: i % 3 === 0 ? '50%' : '0%',
+                      animationDelay: `${i * 0.3}s`,
+                      animationDuration: '2s'
                     }}
                   ></div>
                 ))}
