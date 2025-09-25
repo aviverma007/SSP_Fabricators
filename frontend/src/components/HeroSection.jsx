@@ -265,17 +265,16 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Slide Indicators */}
-        <div className="flex justify-center mt-8 space-x-2">
-          {heroSlides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide ? 'bg-blue-900 w-8' : 'bg-gray-300'
-              }`}
-            />
-          ))}
+        {/* Progress Indicator */}
+        <div className="flex justify-center mt-8">
+          <div className="bg-gray-200 rounded-full h-1 w-64 overflow-hidden">
+            <div 
+              className="bg-gradient-to-r from-blue-600 to-orange-500 h-full rounded-full transition-all duration-300"
+              style={{
+                width: `${((currentSlide + 1) / heroSlides.length) * 100}%`
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     </section>
