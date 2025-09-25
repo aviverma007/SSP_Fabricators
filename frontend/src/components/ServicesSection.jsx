@@ -63,7 +63,13 @@ const ServicesSection = () => {
                 <Button 
                   variant="outline" 
                   className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-200"
-                  onClick={() => window.location.href = '/services'}
+                  onClick={() => {
+                    if (service.title === 'Steel Plants') {
+                      window.location.href = '/steel-plants';
+                    } else {
+                      window.location.href = '/services';
+                    }
+                  }}
                 >
                   Learn More
                 </Button>
