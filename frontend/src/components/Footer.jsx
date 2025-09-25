@@ -9,8 +9,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold">
-              SSP <span className="text-orange-500">Fabricators</span>
+            <div className="flex items-center space-x-3 mb-4">
+              {/* Logo Icon */}
+              <div className="relative">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center shadow-lg transform rotate-12">
+                  <div className="text-white font-bold">S</div>
+                </div>
+                <div className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-br from-orange-500 to-orange-400 rounded-md flex items-center justify-center shadow-md transform -rotate-12">
+                  <div className="text-white font-bold text-xs">P</div>
+                </div>
+              </div>
+              
+              {/* Company Name */}
+              <div className="text-2xl font-bold">
+                SSP <span className="text-orange-500">Fabricators</span>
+              </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
               <strong className="text-orange-500">YOU THINK, WE MAKE</strong><br />
