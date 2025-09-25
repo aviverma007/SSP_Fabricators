@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import SteelPlantsService from "./pages/SteelPlantsService";
+import QuoteRequest from "./pages/QuoteRequest";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/quote" element={<QuoteRequest />} />
+          <Route path="/steel-plants" element={<SteelPlantsService />} />
           <Route path="/ms-fabrication" element={<Services />} />
           <Route path="/preengineeringstructure" element={<Services />} />
           <Route path="/sheet-metal-component" element={<Services />} />
