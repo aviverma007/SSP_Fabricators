@@ -32,7 +32,7 @@ const AboutSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 scroll-animate">
           <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
             About Us
           </Badge>
