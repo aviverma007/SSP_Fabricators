@@ -64,7 +64,7 @@ const HeroSection = () => {
         timeoutId = setTimeout(() => {
           setIsDeleting(true);
           setIsTyping(false);
-        }, 3000);
+        }, 1000);
       }
     } else if (isDeleting) {
       // Deleting subtitle first
