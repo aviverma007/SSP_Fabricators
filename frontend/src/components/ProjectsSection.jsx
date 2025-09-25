@@ -128,14 +128,26 @@ const ProjectsSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 section-reveal">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Have a Project in Mind?</h3>
           <p className="text-gray-600 mb-8">
             Let's discuss your fabrication requirements and turn your vision into reality.
           </p>
-          <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8">
-            Start Your Project
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 pulse-glow hover:scale-105 transform transition-all duration-200"
+              onClick={() => window.location.href = '/quote'}
+            >
+              Get Free Quote
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 hover:scale-105 transform transition-all duration-200"
+              onClick={() => window.location.href = '/contact'}
+            >
+              Start Your Project
+            </Button>
+          </div>
         </div>
       </div>
     </section>
