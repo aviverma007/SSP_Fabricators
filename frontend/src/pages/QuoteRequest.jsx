@@ -173,7 +173,7 @@ const QuoteRequest = () => {
                           onChange={handleInputChange}
                           placeholder="Enter your full name"
                           required
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                         />
                       </div>
                       <div>
@@ -187,7 +187,7 @@ const QuoteRequest = () => {
                           onChange={handleInputChange}
                           placeholder="Enter your email"
                           required
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                         />
                       </div>
                       <div>
@@ -201,7 +201,7 @@ const QuoteRequest = () => {
                           onChange={handleInputChange}
                           placeholder="+91 XXXXX XXXXX"
                           required
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                         />
                       </div>
                       <div>
@@ -214,7 +214,7 @@ const QuoteRequest = () => {
                           value={formData.company}
                           onChange={handleInputChange}
                           placeholder="Your company name"
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                         />
                       </div>
                     </div>
@@ -252,7 +252,7 @@ const QuoteRequest = () => {
                           onChange={handleInputChange}
                           placeholder="City, State"
                           required
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                         />
                       </div>
                       <div>
@@ -306,7 +306,7 @@ const QuoteRequest = () => {
                         placeholder="Describe your project in detail..."
                         rows={4}
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                       />
                     </div>
                     <div>
@@ -319,7 +319,7 @@ const QuoteRequest = () => {
                         onChange={handleInputChange}
                         placeholder="Any specific requirements, materials, standards, etc..."
                         rows={3}
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                       />
                     </div>
                     <div>

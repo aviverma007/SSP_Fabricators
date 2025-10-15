@@ -110,19 +110,19 @@ const ProjectsSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold mb-2">17+</div>
-              <div className="text-blue-200">Years Experience</div>
+              <div className="text-[#b8d4e6]">Years Experience</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">500+</div>
-              <div className="text-blue-200">Projects Completed</div>
+              <div className="text-[#b8d4e6]">Projects Completed</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-blue-200">Happy Clients</div>
+              <div className="text-[#b8d4e6]">Happy Clients</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-blue-200">Expert Team</div>
+              <div className="text-[#b8d4e6]">Expert Team</div>
             </div>
           </div>
         </div>

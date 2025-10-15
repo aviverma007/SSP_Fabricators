@@ -70,7 +70,7 @@ const TestimonialsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="bg-[#285075] text-white border-0">
             <CardContent className="p-8">
-              <Quote className="text-blue-300 mb-4" size={32} />
+              <Quote className="text-[#9fc4dc] mb-4" size={32} />
               <p className="text-lg mb-6 italic">
                 "SSP Fabricators has been our trusted partner for multiple projects. Their commitment 
                 to quality and timely delivery makes them stand out in the industry."
@@ -81,7 +81,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold">Manoj Gupta</h4>
-                  <p className="text-blue-200">Site Manager, G.D.C.L</p>
+                  <p className="text-[#b8d4e6]">Site Manager, G.D.C.L</p>
                 </div>
               </div>
             </CardContent>

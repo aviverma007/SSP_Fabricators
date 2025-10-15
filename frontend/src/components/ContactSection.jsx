@@ -79,7 +79,7 @@ const ContactSection = () => {
                         onChange={handleInputChange}
                         placeholder="Enter your full name"
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                       />
                     </div>
                     <div>
@@ -93,7 +93,7 @@ const ContactSection = () => {
                         onChange={handleInputChange}
                         placeholder="Enter your email"
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                       />
                     </div>
                   </div>
@@ -110,7 +110,7 @@ const ContactSection = () => {
                         onChange={handleInputChange}
                         placeholder="+91 XXXXX XXXXX"
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                       />
                     </div>
                     <div>
@@ -124,7 +124,7 @@ const ContactSection = () => {
                         onChange={handleInputChange}
                         placeholder="Project inquiry"
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                       />
                     </div>
                   </div>
@@ -140,7 +140,7 @@ const ContactSection = () => {
                       placeholder="Tell us about your fabrication requirements..."
                       rows={4}
                       required
-                      className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                      className="border-gray-300 focus:border-[#285075] focus:ring-[#285075]"
                     />
                   </div>
 
@@ -213,7 +213,7 @@ const ContactSection = () => {
             <Card className="border-0 shadow-lg bg-[#285075] text-white">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4">Need Immediate Assistance?</h3>
-                <p className="text-blue-200 mb-6">
+                <p className="text-[#b8d4e6] mb-6">
                   For urgent project inquiries or technical support, call us directly.
                 </p>
                 <Button className="w-full bg-white text-[#285075] hover:bg-gray-100">

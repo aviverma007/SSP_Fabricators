@@ -115,7 +115,7 @@ const HeroSection = () => {
     <section className={`relative min-h-screen bg-gradient-to-br ${currentHero.bg} flex items-center overflow-hidden transition-all duration-1000`}>
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute top-20 left-20 w-32 h-32 bg-[#b8d4e6] rounded-full opacity-20 animate-pulse"></div>
         <div className="absolute top-60 right-32 w-24 h-24 bg-orange-200 rounded-full opacity-20 animate-bounce"></div>
         <div className="absolute bottom-40 left-1/3 w-20 h-20 bg-green-200 rounded-full opacity-20 animate-ping"></div>
       </div>
@@ -329,7 +329,7 @@ const HeroSection = () => {
         <div className="flex justify-center mt-8">
           <div className="bg-gray-200 rounded-full h-2 w-80 overflow-hidden shadow-inner">
             <div 
-              className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 h-full rounded-full transition-all duration-500 relative"
+              className="bg-gradient-to-r from-[#3d6d91] via-purple-600 to-orange-500 h-full rounded-full transition-all duration-500 relative"
               style={{
                 width: `${((currentSlide + 1) / heroSlides.length) * 100}%`
               }}
