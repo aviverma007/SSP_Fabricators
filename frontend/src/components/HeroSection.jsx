@@ -29,7 +29,7 @@ const HeroSection = () => {
     {
       title: "Meet Our Super Architect Team", 
       subtitle: "No One Better Than Us",
-      description: "Get Complete Fabrication with Modern Shapes - 17+ years of excellence in heavy steel fabrication across multiple industries.",
+      description: "Get Complete Fabrication with Modern Shapes - Excellence in heavy steel fabrication across multiple industries.",
       image: "/project3.jpg",
       bg: "from-orange-50 to-green-50"
     },
@@ -41,6 +41,19 @@ const HeroSection = () => {
       bg: "from-green-50 to-purple-50"
     }
   ];
+
+  // Auto-rotate images every 3 seconds
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setImageTransition(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+        setImageTransition(false);
+      }, 500);
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   // Typing effect logic
   useEffect(() => {
@@ -85,16 +98,10 @@ const HeroSection = () => {
           setDisplayedTitle(displayedTitle.slice(0, -1));
         }, 50);
       } else {
-        // Both deleted, move to next slide
+        // Both deleted, reset for next slide
         setIsDeleting(false);
         setIsTyping(true);
         setTitleComplete(false);
-        setImageTransition(true);
-        
-        timeoutId = setTimeout(() => {
-          setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-          setImageTransition(false);
-        }, 500);
       }
     }
 
