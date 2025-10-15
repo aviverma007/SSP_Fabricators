@@ -275,12 +275,6 @@ const HeroSection = () => {
                 }`}></div>
               </div>
               
-              {/* Floating Stats Card */}
-              <div className="absolute -bottom-6 -left-6 bg-[#285075] text-white p-6 rounded-lg shadow-xl animate-float-1 z-10">
-                <div className="text-3xl font-bold">17+</div>
-                <div className="text-sm">Years Experience</div>
-              </div>
-              
               {/* Floating Quality Badge */}
               <div className="absolute -top-6 -right-6 bg-orange-500 text-white p-4 rounded-full shadow-xl animate-float-2 z-10">
                 <CheckCircle size={32} />
