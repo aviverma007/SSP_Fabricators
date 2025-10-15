@@ -9,18 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center mb-4">
               {/* Logo Image */}
               <img 
                 src="/ssp-logo.png" 
                 alt="SSP Fabricators Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
-              
-              {/* Company Name */}
-              <div className="text-2xl font-bold">
-                SSP <span className="text-orange-500">Fabricators</span>
-              </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
               <strong className="text-orange-500">YOU THINK, WE MAKE</strong><br />
