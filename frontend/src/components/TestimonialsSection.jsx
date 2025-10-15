@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+          <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
             Testimonials
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
             <Card key={testimonial.id} className="relative bg-white hover:shadow-xl transition-shadow duration-300 border-0 shadow-lg">
               {/* Quote Icon */}
               <div className="absolute -top-4 left-6">
-                <div className="bg-blue-900 text-white p-3 rounded-full">
+                <div className="bg-[#285075] text-white p-3 rounded-full">
                   <Quote size={24} />
                 </div>
               </div>
@@ -49,15 +49,15 @@ const TestimonialsSection = () => {
                 {/* Author Info */}
                 <div className="border-t pt-6">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <span className="font-bold text-blue-900">
+                    <div className="w-12 h-12 bg-[#e6f0f7] rounded-full flex items-center justify-center">
+                      <span className="font-bold text-[#285075]">
                         {testimonial.name.charAt(0)}
                       </span>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
                       <p className="text-sm text-gray-600">{testimonial.designation}</p>
-                      <p className="text-xs text-blue-600 font-medium">{testimonial.company}</p>
+                      <p className="text-xs text-[#3d6d91] font-medium">{testimonial.company}</p>
                     </div>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
 
         {/* Additional Testimonials Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="bg-blue-900 text-white border-0">
+          <Card className="bg-[#285075] text-white border-0">
             <CardContent className="p-8">
               <Quote className="text-blue-300 mb-4" size={32} />
               <p className="text-lg mb-6 italic">
@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
                 to quality and timely delivery makes them stand out in the industry."
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#2f5a75] rounded-full flex items-center justify-center">
                   <span className="font-bold">M</span>
                 </div>
                 <div>
@@ -117,7 +117,7 @@ const TestimonialsSection = () => {
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
               Get Your Quote
             </button>
-            <button className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors">
+            <button className="border border-[#3d6d91] text-[#3d6d91] hover:bg-[#3d6d91] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors">
               View All Projects
             </button>
           </div>

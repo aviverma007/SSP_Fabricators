@@ -12,10 +12,10 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
+      <section className="bg-gradient-to-br from-slate-50 to-[#f5f9fc] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+            <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
               Contact Us
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -31,8 +31,8 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="space-y-4 p-0">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                  <Phone className="text-blue-600" size={24} />
+                <div className="bg-[#e6f0f7] w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+                  <Phone className="text-[#3d6d91]" size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Call Us</h3>
                 <p className="text-gray-600">+91-8851013535</p>
@@ -87,8 +87,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Users className="text-blue-600" size={24} />
+                  <div className="bg-[#e6f0f7] p-3 rounded-lg">
+                    <Users className="text-[#3d6d91]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Team</h3>
@@ -135,7 +135,7 @@ const Contact = () => {
               {/* Overlay Stats */}
               <Card className="absolute -bottom-8 -left-8 bg-white shadow-xl">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-blue-900 mb-1">17+</div>
+                  <div className="text-3xl font-bold text-[#285075] mb-1">17+</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </CardContent>
               </Card>

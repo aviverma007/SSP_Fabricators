@@ -26,7 +26,7 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+          <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
             Work of Excellence
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -46,8 +46,8 @@ const ProjectsSection = () => {
               variant={activeFilter === category ? "default" : "outline"}
               onClick={() => setActiveFilter(category)}
               className={activeFilter === category 
-                ? "bg-blue-900 hover:bg-blue-800" 
-                : "border-gray-300 hover:border-blue-600 hover:text-blue-600"
+                ? "bg-[#285075] hover:bg-[#285075]" 
+                : "border-gray-300 hover:border-[#3d6d91] hover:text-[#3d6d91]"
               }
             >
               {category}
@@ -85,7 +85,7 @@ const ProjectsSection = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-sm text-gray-600">{project.type}</span>
-                  <Badge variant="outline" className="text-blue-600 border-blue-200">
+                  <Badge variant="outline" className="text-[#3d6d91] border-[#cce0ed]">
                     {project.client}
                   </Badge>
                 </div>
@@ -95,7 +95,7 @@ const ProjectsSection = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-200"
+                  className="w-full border-[#3d6d91] text-[#3d6d91] hover:bg-[#3d6d91] hover:text-white transform hover:scale-105 transition-all duration-200"
                   onClick={() => window.location.href = '/contact'}
                 >
                   View Details
@@ -106,7 +106,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* Statistics */}
-        <div className="mt-20 bg-blue-900 text-white rounded-2xl p-8">
+        <div className="mt-20 bg-[#285075] text-white rounded-2xl p-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold mb-2">17+</div>
@@ -142,7 +142,7 @@ const ProjectsSection = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 hover:scale-105 transform transition-all duration-200"
+              className="border-[#3d6d91] text-[#3d6d91] hover:bg-[#3d6d91] hover:text-white px-8 hover:scale-105 transform transition-all duration-200"
               onClick={() => window.location.href = '/contact'}
             >
               Start Your Project

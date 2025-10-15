@@ -64,10 +64,10 @@ const Services = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
+      <section className="bg-gradient-to-br from-slate-50 to-[#f5f9fc] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+            <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
               Our Services
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -90,7 +90,7 @@ const Services = () => {
                 {/* Content */}
                 <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <div className="flex items-center gap-4">
-                    <div className="bg-blue-100 text-blue-600 p-4 rounded-xl">
+                    <div className="bg-[#e6f0f7] text-[#3d6d91] p-4 rounded-xl">
                       {service.icon}
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">{service.title}</h2>
@@ -146,8 +146,8 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="p-6 text-center">
               <CardContent className="space-y-4 p-0">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                  <span className="text-2xl font-bold text-blue-600">✓</span>
+                <div className="bg-[#e6f0f7] w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+                  <span className="text-2xl font-bold text-[#3d6d91]">✓</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Quality Assurance</h3>
                 <p className="text-gray-600">

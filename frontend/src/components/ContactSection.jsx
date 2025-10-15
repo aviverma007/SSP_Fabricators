@@ -48,7 +48,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+          <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
             Contact Now
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -165,8 +165,8 @@ const ContactSection = () => {
                 
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="bg-blue-100 p-3 rounded-lg">
-                      <Phone className="text-blue-600" size={20} />
+                    <div className="bg-[#e6f0f7] p-3 rounded-lg">
+                      <Phone className="text-[#3d6d91]" size={20} />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900">Phone</h4>
@@ -210,13 +210,13 @@ const ContactSection = () => {
             </Card>
 
             {/* Quick Contact */}
-            <Card className="border-0 shadow-lg bg-blue-900 text-white">
+            <Card className="border-0 shadow-lg bg-[#285075] text-white">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4">Need Immediate Assistance?</h3>
                 <p className="text-blue-200 mb-6">
                   For urgent project inquiries or technical support, call us directly.
                 </p>
-                <Button className="w-full bg-white text-blue-900 hover:bg-gray-100">
+                <Button className="w-full bg-white text-[#285075] hover:bg-gray-100">
                   Call Now: +91-8851013535
                 </Button>
               </CardContent>
@@ -229,7 +229,7 @@ const ContactSection = () => {
                 
                 <div className="space-y-4">
                   <div className="flex gap-3">
-                    <div className="bg-blue-900 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
+                    <div className="bg-[#285075] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
                       1
                     </div>
                     <div>

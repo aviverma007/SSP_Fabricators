@@ -7,7 +7,7 @@ import { CheckCircle, Users, Award, Target, Shield } from 'lucide-react';
 const AboutSection = () => {
   const strengths = [
     {
-      icon: <Users className="text-blue-600" size={24} />,
+      icon: <Users className="text-[#3d6d91]" size={24} />,
       title: "Skilled & Experienced Workforce",
       description: "Our team brings decades of expertise in fabrication and erection services."
     },
@@ -33,7 +33,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 scroll-animate">
-          <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+          <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
             About Us
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -101,7 +101,7 @@ const AboutSection = () => {
             {/* Overlay Card */}
             <Card className="absolute -bottom-8 -left-8 bg-white shadow-xl animate-float-1">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-blue-900">17+</div>
+                <div className="text-3xl font-bold text-[#285075]">17+</div>
                 <div className="text-sm text-gray-600">Years of Excellence</div>
               </CardContent>
             </Card>
@@ -144,7 +144,7 @@ const AboutSection = () => {
               { step: "05", title: "Testing & Handover", desc: "Quality testing and project handover" }
             ].map((process, index) => (
               <div key={index} className="text-center relative">
-                <div className="bg-blue-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
+                <div className="bg-[#285075] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
                   {process.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">{process.title}</h4>

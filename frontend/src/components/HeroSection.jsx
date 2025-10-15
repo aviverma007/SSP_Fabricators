@@ -17,14 +17,14 @@ const HeroSection = () => {
       subtitle: "Solid Transformation", 
       description: "SSP Fabricators - Your trusted partner for Steel Plants, Sugar Mills, Paper Mills, Power Houses and all types of customized fabrication & site works.",
       image: "/project1.jpg",
-      bg: "from-slate-50 to-blue-50"
+      bg: "from-slate-50 to-[#f5f9fc]"
     },
     {
       title: "World Class Service",
       subtitle: "We Build Your Dreams",
       description: "Get Perfect Fabrication Industry - A Combination of Fast Blending Metal Fabrication with precision engineering and safety standards.",
       image: "/project2.jpg",
-      bg: "from-blue-50 to-orange-50"
+      bg: "from-[#f5f9fc] to-orange-50"
     },
     {
       title: "Meet Our Super Architect Team", 
@@ -125,7 +125,7 @@ const HeroSection = () => {
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
-            className={`absolute w-2 h-2 bg-blue-400 rounded-full opacity-30 animate-float-${i % 3 + 1}`}
+            className={`absolute w-2 h-2 bg-[#5a8fb3] rounded-full opacity-30 animate-float-${i % 3 + 1}`}
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -148,7 +148,7 @@ const HeroSection = () => {
                   {displayedTitle}
                   {isTyping && !titleComplete && <span className="typing-cursor animate-pulse">|</span>}
                 </span>
-                <span className="text-blue-900 block">
+                <span className="text-[#285075] block">
                   {displayedSubtitle}
                   {isTyping && titleComplete && displayedSubtitle.length < currentHero.subtitle.length && <span className="typing-cursor animate-pulse">|</span>}
                   {isDeleting && displayedSubtitle.length > 0 && <span className="typing-cursor animate-pulse">|</span>}
@@ -193,7 +193,7 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white px-8 py-4 text-lg transform hover:scale-105 transition-all duration-200"
+                className="border-[#285075] text-[#285075] hover:bg-[#285075] hover:text-white px-8 py-4 text-lg transform hover:scale-105 transition-all duration-200"
                 onClick={scrollToAbout}
               >
                 Learn More
@@ -263,13 +263,13 @@ const HeroSection = () => {
                 ))}
                 
                 {/* Gradient overlay for smooth transitions */}
-                <div className={`absolute inset-0 bg-gradient-to-r from-blue-500/10 to-orange-500/10 transition-opacity duration-1000 ${
+                <div className={`absolute inset-0 bg-gradient-to-r from-[#f5f9fc]0/10 to-orange-500/10 transition-opacity duration-1000 ${
                   imageTransition ? 'opacity-100' : 'opacity-0'
                 }`}></div>
               </div>
               
               {/* Floating Stats Card */}
-              <div className="absolute -bottom-6 -left-6 bg-blue-900 text-white p-6 rounded-lg shadow-xl animate-float-1 z-10">
+              <div className="absolute -bottom-6 -left-6 bg-[#285075] text-white p-6 rounded-lg shadow-xl animate-float-1 z-10">
                 <div className="text-3xl font-bold">17+</div>
                 <div className="text-sm">Years Experience</div>
               </div>

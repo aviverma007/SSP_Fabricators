@@ -52,10 +52,10 @@ const SteelPlantsService = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
+      <section className="bg-gradient-to-br from-slate-50 to-[#f5f9fc] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 section-reveal">
-            <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+            <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
               Steel Plants Service
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -69,19 +69,19 @@ const SteelPlantsService = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto section-reveal">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">50+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">50+</div>
               <div className="text-gray-600">Steel Plants Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">1000+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">1000+</div>
               <div className="text-gray-600">Tons Steel Fabricated</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">99%</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">99%</div>
               <div className="text-gray-600">Quality Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">24/7</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">24/7</div>
               <div className="text-gray-600">Support Available</div>
             </div>
           </div>
@@ -94,7 +94,7 @@ const SteelPlantsService = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 section-reveal">
               <div className="flex items-center gap-4">
-                <div className="bg-blue-100 text-blue-600 p-4 rounded-xl">
+                <div className="bg-[#e6f0f7] text-[#3d6d91] p-4 rounded-xl">
                   <Factory size={32} />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Steel Plant Expertise</h2>
@@ -147,7 +147,7 @@ const SteelPlantsService = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {processSteps.map((process, index) => (
               <div key={index} className="text-center relative section-reveal" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="bg-blue-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg animate-bounce">
+                <div className="bg-[#285075] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg animate-bounce">
                   {process.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">{process.title}</h4>
@@ -172,8 +172,8 @@ const SteelPlantsService = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-8 text-center hover-lift section-reveal">
               <CardContent className="space-y-4 p-0">
-                <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
-                  <Award className="text-blue-600" size={32} />
+                <div className="bg-[#e6f0f7] w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+                  <Award className="text-[#3d6d91]" size={32} />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">Quality Assurance</h3>
                 <p className="text-gray-600">
@@ -210,7 +210,7 @@ const SteelPlantsService = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-900 text-white">
+      <section className="py-20 bg-[#285075] text-white">
         <div className="container mx-auto px-4 text-center section-reveal">
           <h2 className="text-4xl font-bold mb-6">Ready to Start Your Steel Plant Project?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
@@ -225,7 +225,7 @@ const SteelPlantsService = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 text-lg hover:scale-105 transform transition-all duration-200"
+              className="border-white text-white hover:bg-white hover:text-[#285075] px-8 py-4 text-lg hover:scale-105 transform transition-all duration-200"
               onClick={() => window.open('tel:+918851013535')}
             >
               Call: +91-8851013535

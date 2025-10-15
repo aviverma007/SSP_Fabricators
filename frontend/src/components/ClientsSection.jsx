@@ -8,7 +8,7 @@ const ClientsSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+          <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
             Happy Clients
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -37,22 +37,22 @@ const ClientsSection = () => {
         </div>
 
         {/* Client Stats */}
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl p-8">
+        <div className="mt-16 bg-gradient-to-r from-[#f5f9fc] to-orange-50 rounded-2xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-blue-900 mb-2">200+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">200+</div>
               <div className="text-gray-600">Satisfied Clients</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-900 mb-2">500+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">500+</div>
               <div className="text-gray-600">Projects Delivered</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-900 mb-2">98%</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">98%</div>
               <div className="text-gray-600">Client Retention</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-900 mb-2">24/7</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">24/7</div>
               <div className="text-gray-600">Support Available</div>
             </div>
           </div>
@@ -69,8 +69,8 @@ const ClientsSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center p-6">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-blue-600">1</span>
+              <div className="bg-[#e6f0f7] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-[#3d6d91]">1</span>
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-3">One-Stop Solution</h4>
               <p className="text-gray-600">

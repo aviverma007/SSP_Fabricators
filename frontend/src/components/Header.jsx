@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       {/* Top Info Bar */}
-      <div className="bg-blue-900 text-white py-2">
+      <div className="bg-[#285075] text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
@@ -53,16 +53,16 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <a href="/" className="text-gray-700 hover:text-blue-900 transition-colors font-medium hover:scale-105 transform duration-200">
+              <a href="/" className="text-gray-700 hover:text-[#285075] transition-colors font-medium hover:scale-105 transform duration-200">
                 Home
               </a>
-              <a href="/about" className="text-gray-700 hover:text-blue-900 transition-colors font-medium hover:scale-105 transform duration-200">
+              <a href="/about" className="text-gray-700 hover:text-[#285075] transition-colors font-medium hover:scale-105 transform duration-200">
                 About Us
               </a>
-              <a href="/services" className="text-gray-700 hover:text-blue-900 transition-colors font-medium hover:scale-105 transform duration-200">
+              <a href="/services" className="text-gray-700 hover:text-[#285075] transition-colors font-medium hover:scale-105 transform duration-200">
                 Services
               </a>
-              <a href="/contact" className="text-gray-700 hover:text-blue-900 transition-colors font-medium hover:scale-105 transform duration-200">
+              <a href="/contact" className="text-gray-700 hover:text-[#285075] transition-colors font-medium hover:scale-105 transform duration-200">
                 Contact
               </a>
             </nav>
@@ -90,16 +90,16 @@ const Header = () => {
           {isMenuOpen && (
             <nav className="lg:hidden pb-4 border-t">
               <div className="flex flex-col space-y-4 pt-4">
-                <a href="/" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
+                <a href="/" className="text-gray-700 hover:text-[#285075] transition-colors font-medium">
                   Home
                 </a>
-                <a href="/about" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
+                <a href="/about" className="text-gray-700 hover:text-[#285075] transition-colors font-medium">
                   About Us
                 </a>
-                <a href="/services" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
+                <a href="/services" className="text-gray-700 hover:text-[#285075] transition-colors font-medium">
                   Services
                 </a>
-                <a href="/contact" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
+                <a href="/contact" className="text-gray-700 hover:text-[#285075] transition-colors font-medium">
                   Contact
                 </a>
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white w-fit">

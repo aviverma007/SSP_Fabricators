@@ -107,10 +107,10 @@ const QuoteRequest = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
+      <section className="bg-gradient-to-br from-slate-50 to-[#f5f9fc] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 section-reveal">
-            <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+            <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
               Get Quote
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -125,8 +125,8 @@ const QuoteRequest = () => {
           {/* Process Steps */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto section-reveal">
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FileText className="text-blue-600" size={24} />
+              <div className="bg-[#e6f0f7] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FileText className="text-[#3d6d91]" size={24} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Submit Requirements</h3>
               <p className="text-gray-600">Fill out detailed project requirements and specifications</p>
@@ -336,7 +336,7 @@ const QuoteRequest = () => {
                           id="file-upload"
                         />
                         <label htmlFor="file-upload" className="cursor-pointer">
-                          <span className="text-blue-600 hover:text-blue-700 font-medium">
+                          <span className="text-[#3d6d91] hover:text-[#2f5a75] font-medium">
                             Click to upload files
                           </span>
                           <p className="text-gray-500 text-sm mt-2">

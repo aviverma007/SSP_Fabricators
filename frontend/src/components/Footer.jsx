@@ -28,13 +28,13 @@ const Footer = () => {
               Power Houses and customized fabrication services with 17+ years of excellence.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors">
+              <a href="#" className="bg-[#3d6d91] p-2 rounded-full hover:bg-[#2f5a75] transition-colors">
                 <Facebook size={16} />
               </a>
-              <a href="#" className="bg-blue-400 p-2 rounded-full hover:bg-blue-500 transition-colors">
+              <a href="#" className="bg-[#5a8fb3] p-2 rounded-full hover:bg-[#f5f9fc]0 transition-colors">
                 <Twitter size={16} />
               </a>
-              <a href="#" className="bg-blue-800 p-2 rounded-full hover:bg-blue-900 transition-colors">
+              <a href="#" className="bg-[#285075] p-2 rounded-full hover:bg-[#285075] transition-colors">
                 <Linkedin size={16} />
               </a>
               <a href="#" className="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition-colors">

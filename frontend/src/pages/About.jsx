@@ -12,10 +12,10 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
+      <section className="bg-gradient-to-br from-slate-50 to-[#f5f9fc] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4 text-blue-600 border-blue-200">
+            <Badge variant="outline" className="mb-4 text-[#3d6d91] border-[#cce0ed]">
               About SSP Fabricators
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -30,19 +30,19 @@ const About = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">17+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">17+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">500+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">500+</div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">200+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">200+</div>
               <div className="text-gray-600">Happy Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">50+</div>
+              <div className="text-4xl font-bold text-[#285075] mb-2">50+</div>
               <div className="text-gray-600">Expert Team</div>
             </div>
           </div>
@@ -65,8 +65,8 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center p-8">
               <CardContent className="space-y-4 p-0">
-                <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
-                  <Award className="text-blue-600" size={32} />
+                <div className="bg-[#e6f0f7] w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+                  <Award className="text-[#3d6d91]" size={32} />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">Excellence</h3>
                 <p className="text-gray-600">
@@ -119,7 +119,7 @@ const About = () => {
             <Card className="p-8">
               <CardContent className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center p-0">
                 <div className="text-center lg:text-left">
-                  <div className="w-32 h-32 bg-blue-900 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
+                  <div className="w-32 h-32 bg-[#285075] rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
                     <span className="text-4xl font-bold text-white">SP</span>
                   </div>
                 </div>
