@@ -130,7 +130,7 @@ const Footer = () => {
                 Terms of Service
               </a>
               <div className="text-sm text-gray-400">
-                <span className="text-orange-500 font-bold">17+ Years</span> of Fabrication Excellence
+                <span className="text-orange-500 font-bold">Excellence</span> in Fabrication
               </div>
             </div>
           </div>
