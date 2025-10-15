@@ -101,8 +101,8 @@ const AboutSection = () => {
             {/* Overlay Card */}
             <Card className="absolute -bottom-8 -left-8 bg-white shadow-xl animate-float-1">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-[#285075]">17+</div>
-                <div className="text-sm text-gray-600">Years of Excellence</div>
+                <div className="text-3xl font-bold text-[#285075]">Quality</div>
+                <div className="text-sm text-gray-600">Excellence Assured</div>
               </CardContent>
             </Card>
           </div>
