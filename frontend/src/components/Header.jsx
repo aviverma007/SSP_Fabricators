@@ -21,7 +21,7 @@ const Header = () => {
             </div>
           </div>
           <div className="text-sm">
-            17 Years Fabrication Excellence
+            Excellence in Fabrication
           </div>
         </div>
       </div>
