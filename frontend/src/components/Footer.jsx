@@ -25,7 +25,7 @@ const Footer = () => {
             <p className="text-gray-300 leading-relaxed">
               <strong className="text-orange-500">YOU THINK, WE MAKE</strong><br />
               Leading fabrication company providing Steel Plants, Sugar Mills, Paper Mills, 
-              Power Houses and customized fabrication services with 17+ years of excellence.
+              Power Houses and customized fabrication services with excellence.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="bg-[#3d6d91] p-2 rounded-full hover:bg-[#2f5a75] transition-colors">
