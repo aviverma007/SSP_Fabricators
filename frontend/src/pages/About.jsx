@@ -19,7 +19,7 @@ const About = () => {
               About SSP Fabricators
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              17+ Years of Fabrication Excellence
+              Excellence in Fabrication
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               <strong className="text-orange-500">YOU THINK, WE MAKE</strong><br/>
@@ -28,11 +28,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-[#285075] mb-2">17+</div>
-              <div className="text-gray-600">Years Experience</div>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-4xl font-bold text-[#285075] mb-2">500+</div>
               <div className="text-gray-600">Projects Completed</div>
