@@ -32,17 +32,17 @@ const Header = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="flex items-center gap-2">
-                {/* Logo Images Side by Side - Swapped Order */}
+              <div className="flex items-center gap-3">
+                {/* Logo Images - First larger, second spread right */}
                 <img 
                   src="/hero-image-2.png" 
                   alt="SSP Fabricators Logo" 
-                  className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                  className="h-32 w-auto object-contain hover:scale-105 transition-transform duration-300"
                 />
                 <img 
                   src="/hero-image-1.png" 
                   alt="SSP Fabricators Text Logo" 
-                  className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                  className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
