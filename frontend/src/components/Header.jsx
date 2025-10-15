@@ -33,16 +33,16 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex items-center gap-2">
-                {/* Logo Images Side by Side */}
-                <img 
-                  src="/hero-image-1.png" 
-                  alt="SSP Fabricators Logo 1" 
-                  className="h-16 w-auto object-contain hover:scale-105 transition-transform duration-300"
-                />
+                {/* Logo Images Side by Side - Swapped Order */}
                 <img 
                   src="/hero-image-2.png" 
-                  alt="SSP Fabricators Logo 2" 
-                  className="h-16 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                  alt="SSP Fabricators Logo" 
+                  className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                />
+                <img 
+                  src="/hero-image-1.png" 
+                  alt="SSP Fabricators Text Logo" 
+                  className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
