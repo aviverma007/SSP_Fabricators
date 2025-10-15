@@ -148,7 +148,7 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
               <div className="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium animate-slide-in-left">
-                17 Years Fabrication Excellence
+                Excellence in Fabrication
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight min-h-[200px]">
                 <span className="typing-text">
