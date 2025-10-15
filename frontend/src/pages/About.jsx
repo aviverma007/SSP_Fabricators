@@ -124,7 +124,7 @@ const About = () => {
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Shubham Panchal</h3>
                   <p className="text-xl text-orange-500 font-medium mb-4">Proprietor & Founder</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    With over 17 years of experience in the fabrication industry, Shubham Panchal 
+                    With extensive experience in the fabrication industry, Shubham Panchal 
                     has built SSP Fabricators from the ground up, establishing it as a trusted name 
                     in heavy steel fabrication across Delhi NCR and beyond.
                   </p>
