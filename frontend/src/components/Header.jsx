@@ -32,18 +32,13 @@ const Header = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center">
                 {/* Logo Image */}
                 <img 
                   src="/ssp-logo.png" 
                   alt="SSP Fabricators Logo" 
-                  className="h-16 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                  className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
                 />
-                
-                {/* Company Name */}
-                <div className="text-2xl font-bold text-blue-900">
-                  SSP <span className="text-orange-500">Fabricators</span>
-                </div>
               </div>
             </div>
 
