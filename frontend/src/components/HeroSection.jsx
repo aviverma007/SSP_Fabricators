@@ -16,22 +16,29 @@ const HeroSection = () => {
       title: "We Fabricate Your Industry with",
       subtitle: "Solid Transformation", 
       description: "SSP Fabricators - Your trusted partner for Steel Plants, Sugar Mills, Paper Mills, Power Houses and all types of customized fabrication & site works.",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      image: "/project1.jpg",
       bg: "from-slate-50 to-blue-50"
     },
     {
       title: "World Class Service",
       subtitle: "We Build Your Dreams",
       description: "Get Perfect Fabrication Industry - A Combination of Fast Blending Metal Fabrication with precision engineering and safety standards.",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      image: "/project2.jpg",
       bg: "from-blue-50 to-orange-50"
     },
     {
       title: "Meet Our Super Architect Team", 
       subtitle: "No One Better Than Us",
       description: "Get Complete Fabrication with Modern Shapes - 17+ years of excellence in heavy steel fabrication across multiple industries.",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      image: "/project3.jpg",
       bg: "from-orange-50 to-green-50"
+    },
+    {
+      title: "Excellence in Heavy Fabrication",
+      subtitle: "Building The Future",
+      description: "Delivering superior quality steel fabrication solutions with cutting-edge technology and experienced workforce.",
+      image: "/project4.jpg",
+      bg: "from-green-50 to-purple-50"
     }
   ];
 
