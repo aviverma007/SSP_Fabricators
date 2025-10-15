@@ -250,7 +250,7 @@ const HeroSection = () => {
                       }`}
                       style={{
                         background: index === currentSlide 
-                          ? 'linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(249, 115, 22, 0.1))'
+                          ? 'linear-gradient(45deg, rgba(40, 80, 117, 0.1), rgba(249, 115, 22, 0.1))'
                           : 'linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1))'
                       }}
                     ></div>
