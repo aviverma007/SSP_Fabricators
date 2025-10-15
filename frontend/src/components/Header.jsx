@@ -37,14 +37,17 @@ const Header = () => {
                 <img 
                   src="/hero-image-2.png" 
                   alt="SSP Fabricators Logo" 
-                  className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                  className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300"
                 />
                 {/* Second Logo - Stretched width to extend right */}
-                <img 
-                  src="/hero-image-1.png" 
-                  alt="SSP Fabricators Text Logo" 
-                  className="h-20 w-full max-w-2xl object-contain object-left hover:scale-105 transition-transform duration-300"
-                />
+               <div className="flex justify-end items-center w-full">
+  <img 
+    src="/hero-image-1.png" 
+    alt="SSP Fabricators Text Logo" 
+    className="h-32 w-full max-w-[1200px] object-contain object-right hover:scale-105 transition-transform duration-300"
+  />
+</div>
+
               </div>
             </div>
 
