@@ -29,20 +29,21 @@ const Header = () => {
       {/* Main Header */}
       <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
-            {/* Logo */}
-            <div className="flex items-center">
-              <div className="flex items-center gap-3">
-                {/* Logo Images - First larger, second spread right */}
+          <div className="flex items-stretch justify-between py-0 h-20">
+            {/* Logo - Stretching full height */}
+            <div className="flex items-stretch flex-1 max-w-4xl">
+              <div className="flex items-stretch gap-0">
+                {/* First Logo - Touch top and bottom */}
                 <img 
                   src="/hero-image-2.png" 
                   alt="SSP Fabricators Logo" 
-                  className="h-32 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                  className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
                 />
+                {/* Second Logo - Stretched width to extend right */}
                 <img 
                   src="/hero-image-1.png" 
                   alt="SSP Fabricators Text Logo" 
-                  className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                  className="h-20 w-full max-w-2xl object-contain object-left hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -64,7 +65,7 @@ const Header = () => {
             </nav>
 
             {/* CTA Button */}
-            <div className="hidden lg:flex">
+            <div className="hidden lg:flex items-center">
               <Button 
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 pulse-glow hover:scale-105 transform transition-all duration-200"
                 onClick={() => window.location.href = '/contact'}
