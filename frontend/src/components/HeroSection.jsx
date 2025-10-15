@@ -313,7 +313,7 @@ const HeroSection = () => {
                       top: `${Math.random() * 90}%`,
                       width: '8px',
                       height: '8px',
-                      backgroundColor: i % 2 === 0 ? '#3B82F6' : '#F97316',
+                      backgroundColor: i % 2 === 0 ? '#285075' : '#F97316',
                       borderRadius: i % 3 === 0 ? '50%' : '0%',
                       animationDelay: `${i * 0.3}s`,
                       animationDuration: '2s'
