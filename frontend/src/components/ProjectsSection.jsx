@@ -107,11 +107,7 @@ const ProjectsSection = () => {
 
         {/* Statistics */}
         <div className="mt-20 bg-[#285075] text-white rounded-2xl p-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2">17+</div>
-              <div className="text-[#b8d4e6]">Years Experience</div>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold mb-2">500+</div>
               <div className="text-[#b8d4e6]">Projects Completed</div>
