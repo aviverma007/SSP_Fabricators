@@ -9,12 +9,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center mb-4">
-              {/* Logo Image */}
+            <div className="flex items-center gap-2 mb-4">
+              {/* Logo Images Side by Side */}
               <img 
-                src="/ssp-logo.png" 
-                alt="SSP Fabricators Logo" 
-                className="h-16 w-auto object-contain"
+                src="/hero-image-1.png" 
+                alt="SSP Fabricators Logo 1" 
+                className="h-14 w-auto object-contain"
+              />
+              <img 
+                src="/hero-image-2.png" 
+                alt="SSP Fabricators Logo 2" 
+                className="h-14 w-auto object-contain"
               />
             </div>
             <p className="text-gray-300 leading-relaxed">
