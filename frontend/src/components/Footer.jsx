@@ -10,16 +10,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
-              {/* Logo Images Side by Side */}
-              <img 
-                src="/hero-image-1.png" 
-                alt="SSP Fabricators Logo 1" 
-                className="h-14 w-auto object-contain"
-              />
+              {/* Logo Images Side by Side - Swapped Order */}
               <img 
                 src="/hero-image-2.png" 
-                alt="SSP Fabricators Logo 2" 
-                className="h-14 w-auto object-contain"
+                alt="SSP Fabricators Logo" 
+                className="h-20 w-auto object-contain"
+              />
+              <img 
+                src="/hero-image-1.png" 
+                alt="SSP Fabricators Text Logo" 
+                className="h-20 w-auto object-contain"
               />
             </div>
             <p className="text-gray-300 leading-relaxed">
