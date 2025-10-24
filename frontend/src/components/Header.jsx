@@ -34,19 +34,23 @@ const Header = () => {
             <div className="flex items-stretch flex-1 max-w-4xl">
               <div className="flex items-stretch gap-0">
                 {/* First Logo - Touch top and bottom */}
-                <img 
-                  src="/hero-image-2.png" 
-                  alt="SSP Fabricators Logo" 
-                  className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300"
-                />
+                <a href="/" className="flex items-center">
+                  <img 
+                    src="/hero-image-2.png" 
+                    alt="SSP Fabricators Logo" 
+                    className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300 cursor-pointer"
+                  />
+                </a>
                 {/* Second Logo - Stretched width to extend right */}
                <div className="flex justify-end items-center w-full">
-  <img 
-    src="/hero-image-1.png" 
-    alt="SSP Fabricators Text Logo" 
-    className="h-32 w-full max-w-[1200px] object-contain object-right hover:scale-105 transition-transform duration-300"
-  />
-</div>
+                 <a href="/" className="w-full flex justify-end items-center">
+                   <img 
+                     src="/hero-image-1.png" 
+                     alt="SSP Fabricators Text Logo" 
+                     className="h-32 w-full max-w-[1200px] object-contain object-right hover:scale-105 transition-transform duration-300 cursor-pointer"
+                   />
+                 </a>
+               </div>
 
               </div>
             </div>
