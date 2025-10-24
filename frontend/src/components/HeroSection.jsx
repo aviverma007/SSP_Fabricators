@@ -13,29 +13,29 @@ const HeroSection = () => {
   
   const heroSlides = [
     {
-      title: "We Fabricate Your Industry with",
-      subtitle: "Solid Transformation", 
+      title: "WE FABRICATE YOUR INDUSTRY",
+      subtitle: "", 
       description: "SSP Fabricators - Your trusted partner for Steel Plants, Sugar Mills, Paper Mills, Power Houses and all types of customized fabrication & site works.",
       image: "/project1.jpg",
       bg: "from-slate-50 to-[#f5f9fc]"
     },
     {
-      title: "World Class Service",
-      subtitle: "We Build Your Dreams",
+      title: "WE FABRICATE YOUR INDUSTRY",
+      subtitle: "",
       description: "Get Perfect Fabrication Industry - A Combination of Fast Blending Metal Fabrication with precision engineering and safety standards.",
       image: "/project2.jpg",
       bg: "from-[#f5f9fc] to-orange-50"
     },
     {
-      title: "Meet Our Super Architect Team", 
-      subtitle: "No One Better Than Us",
+      title: "WE FABRICATE YOUR INDUSTRY", 
+      subtitle: "",
       description: "Get Complete Fabrication with Modern Shapes - Excellence in heavy steel fabrication across multiple industries.",
       image: "/project3.jpg",
       bg: "from-orange-50 to-green-50"
     },
     {
-      title: "Excellence in Heavy Fabrication",
-      subtitle: "Building The Future",
+      title: "WE FABRICATE YOUR INDUSTRY",
+      subtitle: "",
       description: "Delivering superior quality steel fabrication solutions with cutting-edge technology and experienced workforce.",
       image: "/project4.jpg",
       bg: "from-green-50 to-purple-50"
