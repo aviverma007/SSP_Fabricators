@@ -226,9 +226,9 @@ const SteelPlantsService = () => {
             <Button 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-[#285075] px-8 py-4 text-lg hover:scale-105 transform transition-all duration-200"
-              onClick={() => window.open('tel:+918851013535')}
+              onClick={() => window.open('tel:+918700849865')}
             >
-              Call: +91-8851013535
+              Call: +91-8700849865
             </Button>
           </div>
         </div>
