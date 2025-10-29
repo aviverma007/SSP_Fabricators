@@ -170,18 +170,9 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900">Phone</h4>
-                      <p className="text-gray-600">+91-8851013535</p>
-                      <p className="text-sm text-gray-500">Shubham Panchal</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="bg-orange-100 p-3 rounded-lg">
-                      <Mail className="text-orange-600" size={20} />
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-gray-900">Email</h4>
-                      <p className="text-gray-600">sspfabricators@gmail.com</p>
+                      <p className="text-gray-600">+91-8700849865</p>
+                      <p className="text-gray-600">+91-7668167061</p>
+                      <p className="text-sm text-gray-500">Mr. Sohanveer Singh Panchal</p>
                     </div>
                   </div>
 
