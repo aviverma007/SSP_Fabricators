@@ -202,9 +202,9 @@ export const companyStats = [
 ];
 
 export const contactInfo = {
-  phone: "+91-8851013535",
-  email: "sspfabricators@gmail.com",
+  phone: "+91-8700849865",
+  phone2: "+91-7668167061",
   address: "Industrial Area, Delhi NCR, India",
-  owner: "Shubham Panchal",
+  owner: "Mr. Sohanveer Singh Panchal",
   workingHours: "Mon-Sat: 9:00 AM - 6:00 PM"
 };
