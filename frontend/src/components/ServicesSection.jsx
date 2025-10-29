@@ -132,9 +132,9 @@ const ServicesSection = () => {
             <Button 
               variant="outline" 
               className="border-[#3d6d91] text-[#3d6d91] hover:bg-[#3d6d91] hover:text-white px-8 hover:scale-105 transform transition-all duration-200"
-              onClick={() => window.open('tel:+918851013535')}
+              onClick={() => window.open('tel:+918700849865')}
             >
-              Call Us: +91-8851013535
+              Call Us: +91-8700849865
             </Button>
           </div>
         </div>
