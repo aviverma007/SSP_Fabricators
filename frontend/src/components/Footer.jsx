@@ -64,14 +64,10 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Phone className="text-orange-500 flex-shrink-0 mt-1" size={16} />
                 <div>
-                  <p className="text-gray-300">+91-8851013535</p>
-                  <p className="text-sm text-gray-400">Shubham Panchal</p>
+                  <p className="text-gray-300">+91-8700849865</p>
+                  <p className="text-gray-300">+91-7668167061</p>
+                  <p className="text-sm text-gray-400">Mr. Sohanveer Singh Panchal</p>
                 </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <Mail className="text-orange-500 flex-shrink-0 mt-1" size={16} />
-                <p className="text-gray-300">sspfabricators@gmail.com</p>
               </div>
               
               <div className="flex items-start gap-3">
