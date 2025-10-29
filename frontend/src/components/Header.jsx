@@ -30,29 +30,19 @@ const Header = () => {
       <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-stretch justify-between py-0 h-20">
-            {/* Logo - Stretching full height */}
-            <div className="flex items-stretch flex-1 max-w-4xl">
-              <div className="flex items-stretch gap-0">
-                {/* First Logo - Touch top and bottom */}
-                <a href="/" className="flex items-center">
-                  <img 
-                    src="/hero-image-2.png" 
-                    alt="SSP Fabricators Logo" 
-                    className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-300 cursor-pointer"
-                  />
-                </a>
-                {/* Second Logo - Stretched width to extend right */}
-               <div className="flex justify-end items-center w-full">
-                 <a href="/" className="w-full flex justify-end items-center">
-                   <img 
-                     src="/hero-image-1.png" 
-                     alt="SSP Fabricators Text Logo" 
-                     className="h-32 w-full max-w-[1200px] object-contain object-right hover:scale-105 transition-transform duration-300 cursor-pointer"
-                   />
-                 </a>
-               </div>
-
-              </div>
+            {/* Logo - Clickable and links to home page */}
+            <div className="flex items-center">
+              <a 
+                href="/" 
+                className="flex items-center transition-transform duration-300 hover:scale-105"
+                aria-label="Go to home page"
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_live-edit-4/artifacts/1io1mdp1_5.png" 
+                  alt="SSP Fabrication & Erection Logo" 
+                  className="h-16 w-auto object-contain cursor-pointer"
+                />
+              </a>
             </div>
 
             {/* Desktop Navigation */}
