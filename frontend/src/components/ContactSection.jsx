@@ -207,8 +207,11 @@ const ContactSection = () => {
                 <p className="text-[#b8d4e6] mb-6">
                   For urgent project inquiries or technical support, call us directly.
                 </p>
-                <Button className="w-full bg-white text-[#285075] hover:bg-gray-100">
-                  Call Now: +91-8851013535
+                <Button 
+                  className="w-full bg-white text-[#285075] hover:bg-gray-100"
+                  onClick={() => window.open('tel:+918700849865')}
+                >
+                  Call Now: +91-8700849865
                 </Button>
               </CardContent>
             </Card>
