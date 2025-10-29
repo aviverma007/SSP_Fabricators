@@ -9,19 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3 mb-4">
-              {/* Logo Images - First larger, second spread right */}
-              <img 
-                src="/hero-image-2.png" 
-                alt="SSP Fabricators Logo" 
-                className="h-28 w-auto object-contain"
-              />
-              <img 
-                src="/hero-image-1.png" 
-                alt="SSP Fabricators Text Logo" 
-                className="h-16 w-auto object-contain"
-              />
-            </div>
+            <h3 className="text-xl font-bold mb-4">SSP Fabricators</h3>
             <p className="text-gray-300 leading-relaxed">
               <strong className="text-orange-500">YOU THINK, WE MAKE</strong><br />
               Leading fabrication company providing Steel Plants, Sugar Mills, Paper Mills, 
