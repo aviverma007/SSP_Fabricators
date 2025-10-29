@@ -96,7 +96,10 @@ const Header = () => {
                 <a href="/contact" className="text-gray-700 hover:text-[#285075] transition-colors font-medium">
                   Contact
                 </a>
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white w-fit">
+                <Button 
+                  className="bg-orange-500 hover:bg-orange-600 text-white w-fit"
+                  onClick={() => window.location.href = '/contact'}
+                >
                   Get Free Quote
                 </Button>
               </div>
