@@ -35,19 +35,9 @@ const Contact = () => {
                   <Phone className="text-[#3d6d91]" size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Call Us</h3>
-                <p className="text-gray-600">+91-8851013535</p>
-                <p className="text-sm text-gray-500">Shubham Panchal</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="space-y-4 p-0">
-                <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                  <Mail className="text-orange-600" size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">Email Us</h3>
-                <p className="text-gray-600">sspfabricators@gmail.com</p>
-                <p className="text-sm text-gray-500">Quick Response</p>
+                <p className="text-gray-600">+91-8700849865</p>
+                <p className="text-gray-600">+91-7668167061</p>
+                <p className="text-sm text-gray-500">Mr. Sohanveer Singh Panchal</p>
               </CardContent>
             </Card>
 
@@ -59,6 +49,17 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gray-900">Visit Us</h3>
                 <p className="text-gray-600">Industrial Area</p>
                 <p className="text-sm text-gray-500">Delhi NCR, India</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="space-y-4 p-0">
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+                  <Clock className="text-blue-600" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Working Hours</h3>
+                <p className="text-gray-600">Mon-Sat: 9 AM - 6 PM</p>
+                <p className="text-sm text-gray-500">Sunday: Closed</p>
               </CardContent>
             </Card>
           </div>
